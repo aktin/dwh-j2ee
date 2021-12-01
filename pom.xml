@@ -5,7 +5,7 @@
 
     <groupId>org.aktin.dwh</groupId>
     <artifactId>dwh-j2ee</artifactId>
-    <version>1.5rc2-SNAPSHOT</version>
+    <version>1.5.1rc1-SNAPSHOT</version>
 
     <description>
         The data warehouse J2EE application contains
@@ -109,19 +109,19 @@
                 <dependency>
                     <groupId>org.aktin.dwh</groupId>
                     <artifactId>admin-gui</artifactId>
-                    <version>0.11</version>
+                    <version>0.12-SNAPSHOT</version>
                     <type>war</type>
                 </dependency>
                 <!-- reporting -->
                 <dependency>
                     <groupId>org.aktin</groupId>
                     <artifactId>report-manager</artifactId>
-                    <version>0.12</version>
+                    <version>0.13-SNAPSHOT</version>
                 </dependency>
                 <dependency>
                     <groupId>org.aktin</groupId>
                     <artifactId>report-archive</artifactId>
-                    <version>0.12</version>
+                    <version>0.13-SNAPSHOT</version>
                 </dependency>
                 <dependency>
                     <groupId>org.aktin</groupId>
@@ -132,19 +132,19 @@
                 <dependency>
                     <groupId>org.aktin</groupId>
                     <artifactId>request-manager</artifactId>
-                    <version>0.12</version>
+                    <version>0.13-SNAPSHOT</version>
                     <type>ejb</type>
                 </dependency>
                 <dependency>
                     <groupId>org.aktin</groupId>
                     <artifactId>study-manager</artifactId>
-                    <version>0.12</version>
+                    <version>0.13-SNAPSHOT</version>
                     <type>ejb</type>
                 </dependency>
                 <dependency>
                     <groupId>org.aktin.reports</groupId>
                     <artifactId>aktin-monthly</artifactId>
-                    <version>0.12</version>
+                    <version>0.13-SNAPSHOT</version>
                 </dependency>
                 <!-- TODO add duplicate transitive dependencies from wars -->
                 <dependency>
@@ -215,7 +215,7 @@
         <dependency>
             <groupId>org.aktin</groupId>
             <artifactId>cda-import</artifactId>
-            <version>0.17</version>
+            <version>0.18-SNAPSHOT</version>
             <type>war</type>
         </dependency>
         <dependency>
