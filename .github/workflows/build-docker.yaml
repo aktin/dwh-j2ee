@@ -109,7 +109,7 @@ jobs:
           echo ::set-output name=repository::$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           echo ::set-output name=version::${GITHUB_REF#refs/tags/v}
           
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: EAR
           path: docker/build/wildfly
