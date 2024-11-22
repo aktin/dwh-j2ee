@@ -109,7 +109,7 @@
                 <dependency>
                     <groupId>org.aktin.dwh</groupId>
                     <artifactId>admin-gui</artifactId>
-                    <version>0.12</version>
+                    <version>0.13rc1</version>
                     <type>war</type>
                 </dependency>
                 <!-- reporting -->
@@ -215,7 +215,7 @@
         <dependency>
             <groupId>org.aktin</groupId>
             <artifactId>cda-import</artifactId>
-            <version>0.18</version>
+            <version>0.19rc1</version>
             <type>war</type>
         </dependency>
         <dependency>
