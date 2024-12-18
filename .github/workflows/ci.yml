@@ -1,0 +1,22 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - v[0-9]+.[0-9]+**
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    uses: aktin/aktin-github-scripts/.github/workflows/maven-build-deploy.yml@main
+    with:
+      java-version: 11
+    secrets:
+      AKTIN_MAVEN_USERNAME: ${{ secrets.AKTIN_MAVEN_USERNAME }}
+      AKTIN_MAVEN_PASSPHRASE: ${{ secrets.AKTIN_MAVEN_PASSPHRASE }}
+      AKTIN_MAVEN_GPG_PASSPHRASE: ${{ secrets.AKTIN_MAVEN_GPG_PASSPHRASE }}
+      AKTIN_MAVEN_GPG_PRIVATE_KEY: ${{ secrets.AKTIN_MAVEN_GPG_PRIVATE_KEY }}
